@@ -1,0 +1,373 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#portfolio{
+    background-color:#E8891D;
+    color: white;
+    padding-bottom: 50px;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+#part-one{
+    background-color: #E8891D;
+    color: white;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+
+h1{
+    font-size: 119px;
+    margin-left: 25px;
+    float: left;
+}
+
+#O{
+    color: #B35A20;
+}
+
+hr{
+    border: none;
+    border-bottom: 5px dashed #B35A20 ;
+    padding-top: 60px;
+    margin-bottom: 100px;
+    
+}
+
+#wilayas{
+    list-style: none;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+#wilayas li{
+    text-align: center;
+    padding:20px;
+    border-radius: 30px;
+    transition: transform .2s;
+}
+
+#wilayas li:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.wilaya-img{
+    border-radius: 50%;
+    max-width: 200px;
+    max-height: 200px;
+    border: 3px solid white;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0 ,0.6);
+}
+
+.name{
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+#part_two{
+    background-color:#B35A20 ;
+    color: white;
+    font-family: sans-serif;
+    font-size: 15px;
+    scroll-behavior: smooth;
+}
+
+.componants{
+    list-style: none;
+    display: inline-flex;
+    margin-left: 50px;
+}
+
+.componants li{
+    text-align: center;
+    justify-content: space-between;
+    padding:40px 80px;
+    border-radius: 30px;
+}
+
+.componants li:hover{
+    background-color: #8f400c;
+    cursor: pointer;
+}
+
+.icons{
+    max-width: 150px;
+    max-height: 150px;
+}
+
+.icon-name{
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+#tele-rest{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 50px;
+    list-style: none;
+    justify-content: center;
+    background: url('restau.jpg') no-repeat center;
+}
+#tele-rest>li{
+    background: rgba(0, 0, 0, 0.74);
+    box-shadow: 5px 5px 10px rgba(3, 3, 3, 0.452);
+    cursor: pointer;
+    transition: transform .1s;
+    border-radius: 20px;
+}
+
+
+#tele-rest>li img{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+
+#tele-rest>li:hover{
+    transform: scale(1.1);
+}
+
+.restaurants{
+    height: 200px;
+    width: 300px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.514);
+}
+
+p{
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+}
+
+.contact-rest {
+    list-style: none;
+    margin-left: 30px;
+}
+
+.contact-rest li{
+    line-height: 30px;
+}
+
+#tele-hotels{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 50px;
+    list-style: none;
+    justify-content: center;
+    background: url('hotels.jpg') no-repeat center;
+}
+#tele-hotels>li{
+    background: #000000be;
+    box-shadow: 5px 5px 10px rgba(3, 3, 3, 0.452);
+    cursor: pointer;
+    transition: transform .1s;
+    border-radius: 20px;
+}
+
+
+#tele-hotels>li img{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+
+#tele-hotels>li:hover{
+    transform: scale(1.1);
+}
+
+.hotels{
+    height: 200px;
+    width: 300px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.514);
+}
+
+#tele-tourism{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 50px;
+    list-style: none;
+    justify-content: center;
+    background: url('tour.jpg') no-repeat center;
+}
+#tele-tourism>li{
+    background: #000000be;
+    box-shadow: 5px 5px 10px rgba(3, 3, 3, 0.452);
+    cursor: pointer;
+    transition: transform .1s;
+    border-radius: 20px;
+}
+
+
+#tele-tourism>li img{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+
+#tele-tourism>li:hover{
+    transform: scale(1.1);
+}
+
+.tourism{
+    height: 200px;
+    width: 300px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.514);
+}
+
+#tele-hos{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 50px;
+    list-style: none;
+    justify-content: center;
+    background: url('tour.jpg') no-repeat center;
+}
+#tele-hos>li{
+    background: #000000be;
+    box-shadow: 5px 5px 10px rgba(3, 3, 3, 0.452);
+    cursor: pointer;
+    transition: transform .1s;
+    border-radius: 20px;
+}
+
+
+#tele-hos>li img{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+
+#tele-hos>li:hover{
+    transform: scale(1.1);
+}
+
+.hospital{
+    height: 200px;
+    width: 300px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.514);
+}
+
+
+#oran-rest{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 50px;
+    list-style: none;
+    justify-content: center;
+    background: url('restau.jpg') no-repeat center;
+}
+
+#oran-rest>li{
+    background: #000000be;
+    box-shadow: 5px 5px 10px rgba(3, 3, 3, 0.452);
+    cursor: pointer;
+    transition: transform .1s;
+    border-radius: 20px;
+}
+
+
+#oran-rest>li img{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+
+#oran-rest>li:hover{
+    transform: scale(1.1);
+}
+
+#oran-hotels{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 50px;
+    list-style: none;
+    justify-content: center;
+    background: url('restau.jpg') no-repeat center;
+}
+#oran-hotels>li{
+    background: #000000be;
+    box-shadow: 5px 5px 10px rgba(3, 3, 3, 0.452);
+    cursor: pointer;
+    transition: transform .1s;
+    border-radius: 20px;
+}
+
+
+#oran-hotels>li img{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+
+#oran-hotels>li:hover{
+    transform: scale(1.1);
+}
+
+#oran-tourism{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 50px;
+    list-style: none;
+    justify-content: center;
+    background: url('restau.jpg') no-repeat center;
+}
+#oran-tourism>li{
+    background: #000000be;
+    box-shadow: 5px 5px 10px rgba(3, 3, 3, 0.452);
+    cursor: pointer;
+    transition: transform .1s;
+    border-radius: 20px;
+}
+
+
+#oran-tourism>li img{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+
+#oran-tourism>li:hover{
+    transform: scale(1.1);
+}
+
+#oran-hos{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 50px;
+    list-style: none;
+    justify-content: center;
+    background: url('restau.jpg') no-repeat center;
+}
+#oran-hos>li{
+    background: #000000be;
+    box-shadow: 5px 5px 10px rgba(3, 3, 3, 0.452);
+    cursor: pointer;
+    transition: transform .1s;
+    border-radius: 20px;
+}
+
+
+#oran-hos>li img{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+
+#oran-hos>li:hover{
+    transform: scale(1.1);
+}
+
+
