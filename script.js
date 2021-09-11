@@ -28,6 +28,15 @@ hid_oran_tourism.style.display="none";
 var hid_oran_hospital=document.getElementById("oran-hos");
 hid_oran_hospital.style.display="none";
 
+var hid_alg_rest=document.getElementById("alg-rest");
+hid_alg_rest.style.display="none";
+var hid_alg_hotel=document.getElementById("alg-hotels");
+hid_alg_hotel.style.display="none";
+var hid_alg_tourism=document.getElementById("alg-tourism");
+hid_alg_tourism.style.display="none";
+var hid_alg_hospital=document.getElementById("alg-hos");
+hid_alg_hospital.style.display="none";
+
 var li_elements = document.querySelectorAll("#wilayas li");
 for (var i = 0; i < li_elements.length; i++) {
   li_elements[i].addEventListener("click", function() {
@@ -54,6 +63,10 @@ for (var i = 0; i < li_elements.length; i++) {
       document.getElementById("Algiers").style.display = "flex";
     } else{
         document.getElementById("Algiers").style.display = "none";
+        document.getElementById("alg-rest").style.display = "none";
+        document.getElementById("alg-hotels").style.display = "none";
+        document.getElementById("alg-tourism").style.display = "none";
+        document.getElementById("alg-hos").style.display = "none";
     }
      if (li_value == "const" && hid_const.style.display=="none" ) {
       document.getElementById("Constantine").style.display = "flex";
@@ -121,6 +134,34 @@ for (var i = 0; i < li_elements3.length; i++) {
       document.getElementById("oran-hos").style.display = "grid";
     } else{
       document.getElementById("oran-hos").style.display = "none";
+    }
+});
+}  
+
+var li_elements4 = document.querySelectorAll("#Algiers li");
+
+for (var i = 0; i < li_elements4.length; i++) {
+  li_elements4[i].addEventListener("click", function() {
+    var li_value = this.getAttribute("data-a");
+    if (li_value == "alg-rest" && hid_alg_rest.style.display=="none") {
+      document.getElementById("alg-rest").style.display = "grid";
+    } else{
+        document.getElementById("alg-rest").style.display = "none";
+    }
+    if (li_value == "alg-hotels" && hid_alg_hotel.style.display=="none") {
+      document.getElementById("alg-hotels").style.display = "grid";
+    } else{
+        document.getElementById("alg-hotels").style.display = "none";
+    }
+    if(li_value == "alg-tourism" && hid_alg_tourism.style.display=="none"){
+      document.getElementById("alg-tourism").style.display = "grid";
+    } else{
+      document.getElementById("alg-tourism").style.display = "none";
+    }
+    if(li_value == "alg-hospitals" && hid_alg_hospital.style.display=="none"){
+      document.getElementById("alg-hos").style.display = "grid";
+    } else{
+      document.getElementById("alg-hos").style.display = "none";
     }
 });
 }  
