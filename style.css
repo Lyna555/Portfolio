@@ -79,13 +79,14 @@ hr{
 
 .componants{
     list-style: none;
-    display: inline-flex;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
     margin-left: 50px;
 }
 
 .componants li{
     text-align: center;
-    justify-content: space-between;
     padding:40px 80px;
     border-radius: 30px;
 }
@@ -367,6 +368,118 @@ h3{
 
 
 #oran-hos>li:hover{
+    transform: scale(1.1);
+}
+
+
+
+#alg-rest{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 50px;
+    list-style: none;
+    justify-content: center;
+    background: url('restau.jpg') no-repeat center;
+}
+
+#alg-rest>li{
+    background: #000000be;
+    box-shadow: 5px 5px 10px rgba(3, 3, 3, 0.452);
+    cursor: pointer;
+    transition: transform .1s;
+    border-radius: 20px;
+}
+
+
+#alg-rest>li img{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+
+#alg-rest>li:hover{
+    transform: scale(1.1);
+}
+
+#alg-hotels{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 50px;
+    list-style: none;
+    justify-content: center;
+    background: url('restau.jpg') no-repeat center;
+}
+#alg-hotels>li{
+    background: #000000be;
+    box-shadow: 5px 5px 10px rgba(3, 3, 3, 0.452);
+    cursor: pointer;
+    transition: transform .1s;
+    border-radius: 20px;
+}
+
+
+#alg-hotels>li img{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+
+#alg-hotels>li:hover{
+    transform: scale(1.1);
+}
+
+#alg-tourism{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 50px;
+    list-style: none;
+    justify-content: center;
+    background: url('restau.jpg') no-repeat center;
+}
+
+#alg-tourism>li{
+    background: #000000be;
+    box-shadow: 5px 5px 10px rgba(3, 3, 3, 0.452);
+    cursor: pointer;
+    transition: transform .1s;
+    border-radius: 20px;
+}
+
+
+#alg-tourism>li img{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+
+#alg-tourism>li:hover{
+    transform: scale(1.1);
+}
+
+#alg-hos{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 50px;
+    list-style: none;
+    justify-content: center;
+    background: url('restau.jpg') no-repeat center;
+}
+#alg-hos>li{
+    background: #000000be;
+    box-shadow: 5px 5px 10px rgba(3, 3, 3, 0.452);
+    cursor: pointer;
+    transition: transform .1s;
+    border-radius: 20px;
+}
+
+
+#alg-hos>li img{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+
+#alg-hos>li:hover{
     transform: scale(1.1);
 }
 
