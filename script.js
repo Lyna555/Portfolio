@@ -36,7 +36,25 @@ var hid_alg_tourism=document.getElementById("alg-tourism");
 hid_alg_tourism.style.display="none";
 var hid_alg_hospital=document.getElementById("alg-hos");
 hid_alg_hospital.style.display="none";
+/*...*/
+var hid_con_rest=document.getElementById("con-rest");
+hid_con_rest.style.display="none";
+var hid_con_hotel=document.getElementById("con-hotels");
+hid_con_hotel.style.display="none";
+var hid_con_tourism=document.getElementById("con-tourism");
+hid_con_tourism.style.display="none";
+var hid_con_hospital=document.getElementById("con-hos");
+hid_con_hospital.style.display="none";
 
+var hid_sah_rest=document.getElementById("sah-rest");
+hid_sah_rest.style.display="none";
+var hid_sah_hotel=document.getElementById("sah-hotels");
+hid_sah_hotel.style.display="none";
+var hid_sah_tourism=document.getElementById("sah-tourism");
+hid_sah_tourism.style.display="none";
+var hid_sah_hospital=document.getElementById("sah-hos");
+hid_sah_hospital.style.display="none";
+/*..*/
 var li_elements = document.querySelectorAll("#wilayas li");
 for (var i = 0; i < li_elements.length; i++) {
   li_elements[i].addEventListener("click", function() {
@@ -72,11 +90,19 @@ for (var i = 0; i < li_elements.length; i++) {
       document.getElementById("Constantine").style.display = "flex";
     } else{
         document.getElementById("Constantine").style.display = "none";
+        document.getElementById("con-rest").style.display = "none";
+        document.getElementById("con-hotels").style.display = "none";
+        document.getElementById("con-tourism").style.display = "none";
+        document.getElementById("con-hos").style.display = "none";
     }
      if(li_value == "tam" && hid_tam.style.display=="none") {
         document.getElementById("Sahara").style.display = "flex";
     }else{
         document.getElementById("Sahara").style.display = "none";
+        document.getElementById("sah-rest").style.display = "none";
+        document.getElementById("sah-hotels").style.display = "none";
+        document.getElementById("sah-tourism").style.display = "none";
+        document.getElementById("sah-hos").style.display = "none";
     }
   });
 }
@@ -165,3 +191,60 @@ for (var i = 0; i < li_elements4.length; i++) {
     }
 });
 }  
+
+var li_elements5 = document.querySelectorAll("#Constantine li");
+
+for (var i = 0; i < li_elements5.length; i++) {
+  li_elements5[i].addEventListener("click", function() {
+    var li_value = this.getAttribute("data-c");
+    if (li_value == "con-rest" && hid_con_rest.style.display=="none") {
+      document.getElementById("con-rest").style.display = "grid";
+    } else{
+        document.getElementById("con-rest").style.display = "none";
+    }
+    if (li_value == "con-hotels" && hid_con_hotel.style.display=="none") {
+      document.getElementById("con-hotels").style.display = "grid";
+    } else{
+        document.getElementById("con-hotels").style.display = "none";
+    }
+    if(li_value == "con-tourism" && hid_con_tourism.style.display=="none"){
+      document.getElementById("con-tourism").style.display = "grid";
+    } else{
+      document.getElementById("con-tourism").style.display = "none";
+    }
+    if(li_value == "con-hospitals" && hid_con_hospital.style.display=="none"){
+      document.getElementById("con-hos").style.display = "grid";
+    } else{
+      document.getElementById("con-hos").style.display = "none";
+    }
+});
+}  
+
+var li_elements6 = document.querySelectorAll("#Sahara li");
+
+for (var i = 0; i < li_elements6.length; i++) {
+  li_elements6[i].addEventListener("click", function() {
+    var li_value = this.getAttribute("data-s");
+    if (li_value == "sah-rest" && hid_con_rest.style.display=="none") {
+      document.getElementById("sah-rest").style.display = "grid";
+    } else{
+        document.getElementById("sah-rest").style.display = "none";
+    }
+    if (li_value == "sah-hotels" && hid_con_hotel.style.display=="none") {
+      document.getElementById("sah-hotels").style.display = "grid";
+    } else{
+        document.getElementById("sah-hotels").style.display = "none";
+    }
+    if(li_value == "sah-tourism" && hid_con_tourism.style.display=="none"){
+      document.getElementById("sah-tourism").style.display = "grid";
+    } else{
+      document.getElementById("sah-tourism").style.display = "none";
+    }
+    if(li_value == "sah-hospitals" && hid_con_hospital.style.display=="none"){
+      document.getElementById("sah-hos").style.display = "grid";
+    } else{
+      document.getElementById("sah-hos").style.display = "none";
+    }
+});
+}  
+
