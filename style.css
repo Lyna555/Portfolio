@@ -48,6 +48,7 @@ hr{
     text-align: center;
     padding:20px;
     border-radius: 30px;
+    z-index: 1;
     transition: transform .2s;
 }
 
@@ -82,7 +83,7 @@ hr{
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
-    margin-left: 50px;
+    width: 100%;
 }
 
 .componants li{
@@ -482,5 +483,228 @@ h3{
 #alg-hos>li:hover{
     transform: scale(1.1);
 }
+
+/*constantine*/
+#con-rest{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 50px;
+    list-style: none;
+    justify-content: center;
+    background: url('restau.jpg') no-repeat center;
+}
+
+#con-rest>li{
+    background: #000000be;
+    box-shadow: 5px 5px 10px rgba(3, 3, 3, 0.452);
+    cursor: pointer;
+    transition: transform .1s;
+    border-radius: 20px;
+}
+
+
+#con-rest>li img{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+
+#con-rest>li:hover{
+    transform: scale(1.1);
+}
+
+#con-hotels{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 50px;
+    list-style: none;
+    justify-content: center;
+    background: url('restau.jpg') no-repeat center;
+}
+#con-hotels>li{
+    background: #000000be;
+    box-shadow: 5px 5px 10px rgba(3, 3, 3, 0.452);
+    cursor: pointer;
+    transition: transform .1s;
+    border-radius: 20px;
+}
+
+
+#con-hotels>li img{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+
+#con-hotels>li:hover{
+    transform: scale(1.1);
+}
+
+#con-tourism{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 50px;
+    list-style: none;
+    justify-content: center;
+    background: url('restau.jpg') no-repeat center;
+}
+
+#con-tourism>li{
+    background: #000000be;
+    box-shadow: 5px 5px 10px rgba(3, 3, 3, 0.452);
+    cursor: pointer;
+    transition: transform .1s;
+    border-radius: 20px;
+}
+
+
+#con-tourism>li img{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+
+#con-tourism>li:hover{
+    transform: scale(1.1);
+}
+
+#con-hos{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 50px;
+    list-style: none;
+    justify-content: center;
+    background: url('restau.jpg') no-repeat center;
+}
+#con-hos>li{
+    background: #000000be;
+    box-shadow: 5px 5px 10px rgba(3, 3, 3, 0.452);
+    cursor: pointer;
+    transition: transform .1s;
+    border-radius: 20px;
+}
+
+
+#con-hos>li img{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+
+#con-hos>li:hover{
+    transform: scale(1.1);
+}
+
+/*sahara*/
+#sah-rest{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 50px;
+    list-style: none;
+    justify-content: center;
+    background: url('restau.jpg') no-repeat center;
+}
+
+#sah-rest>li{
+    background: #000000be;
+    box-shadow: 5px 5px 10px rgba(3, 3, 3, 0.452);
+    cursor: pointer;
+    transition: transform .1s;
+    border-radius: 20px;
+}
+
+
+#sah-rest>li img{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+
+#sah-rest>li:hover{
+    transform: scale(1.1);
+}
+
+#sah-hotels{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 50px;
+    list-style: none;
+    justify-content: center;
+    background: url('restau.jpg') no-repeat center;
+}
+#sah-hotels>li{
+    background: #000000be;
+    box-shadow: 5px 5px 10px rgba(3, 3, 3, 0.452);
+    cursor: pointer;
+    transition: transform .1s;
+    border-radius: 20px;
+}
+
+
+#sah-hotels>li img{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+
+#sah-hotels>li:hover{
+    transform: scale(1.1);
+}
+
+#sah-tourism{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 50px;
+    list-style: none;
+    justify-content: center;
+    background: url('restau.jpg') no-repeat center;
+}
+
+#sah-tourism>li{
+    background: #000000be;
+    box-shadow: 5px 5px 10px rgba(3, 3, 3, 0.452);
+    cursor: pointer;
+    transition: transform .1s;
+    border-radius: 20px;
+}
+
+
+#sah-tourism>li img{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+
+#sah-tourism>li:hover{
+    transform: scale(1.1);
+}
+
+#sah-hos{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 50px;
+    list-style: none;
+    justify-content: center;
+    background: url('restau.jpg') no-repeat center;
+}
+#sah-hos>li{
+    background: #000000be;
+    box-shadow: 5px 5px 10px rgba(3, 3, 3, 0.452);
+    cursor: pointer;
+    transition: transform .1s;
+    border-radius: 20px;
+}
+
+
+#sah-hos>li img{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+
+#sah-hos>li:hover{
+    transform: scale(1.1);
+}
+
 
 
