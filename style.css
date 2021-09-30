@@ -3,26 +3,21 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 #portfolio{
-    background-color:#E8891D;
+    background-color: #f5f5dc;
     color: white;
+    font-size: 15px;
     padding-bottom: 50px;
     font-family: sans-serif;
     scroll-behavior: smooth;
 }
 
-
-#part-one{
-    background-color: #E8891D;
-    color: white;
-    font-family: sans-serif;
-    font-size: 15px;
-}
-
-h1{
+#port-title{
     font-size: 119px;
     margin-left: 25px;
     float: left;
+    color: #E8891D;
 }
 
 #O{
@@ -34,7 +29,6 @@ hr{
     border-bottom: 5px dashed #B35A20 ;
     padding-top: 60px;
     margin-bottom: 100px;
-    
 }
 
 #wilayas{
@@ -45,6 +39,7 @@ hr{
 }
 
 #wilayas li{
+    color: black;
     text-align: center;
     padding:20px;
     border-radius: 30px;
@@ -71,8 +66,7 @@ hr{
 }
 
 #part_two{
-    background-color:#B35A20 ;
-    color: white;
+    background-color: #fcf1b1;
     font-family: sans-serif;
     font-size: 15px;
     scroll-behavior: smooth;
@@ -90,10 +84,11 @@ hr{
     text-align: center;
     padding:40px 80px;
     border-radius: 30px;
+    color: black;
 }
 
 .componants li:hover{
-    background-color: #8f400c;
+    background-color: #e2d89e;
     cursor: pointer;
 }
 
@@ -107,7 +102,7 @@ hr{
     font-weight: bolder;
 }
 
-a{
+.compo-href{
     text-decoration: none;
     color: white;
 }
@@ -121,12 +116,17 @@ a{
     justify-content: center;
     background: url('restau.jpg') no-repeat center;
 }
+
 #tele-rest>li{
     background: rgba(0, 0, 0, 0.74);
     box-shadow: 5px 5px 10px rgba(3, 3, 3, 0.452);
-    cursor: pointer;
     transition: transform .1s;
     border-radius: 20px;
+}
+
+
+#tele-rest>a:hover{
+    cursor: pointer;
 }
 
 
@@ -146,21 +146,27 @@ a{
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.514);
 }
 
-p{
+.parag{
     text-align: center;
 }
 
-h3{
+.compo-title{
     text-align: center;
 }
 
 .contact-rest {
     list-style: none;
-    margin-left: 30px;
+    text-align: center;
+    max-width: 300px;
 }
 
 .contact-rest li{
     line-height: 30px;
+    transition: transform .1s;
+}
+
+.contact-rest li:hover{
+    transform: scale(1.1);
 }
 
 #tele-hotels{
@@ -174,7 +180,6 @@ h3{
 #tele-hotels>li{
     background: #000000be;
     box-shadow: 5px 5px 10px rgba(3, 3, 3, 0.452);
-    cursor: pointer;
     transition: transform .1s;
     border-radius: 20px;
 }
@@ -204,10 +209,10 @@ h3{
     justify-content: center;
     background: url('tour.jpg') no-repeat center;
 }
+
 #tele-tourism>li{
     background: #000000be;
     box-shadow: 5px 5px 10px rgba(3, 3, 3, 0.452);
-    cursor: pointer;
     transition: transform .1s;
     border-radius: 20px;
 }
@@ -235,12 +240,11 @@ h3{
     grid-gap: 50px;
     list-style: none;
     justify-content: center;
-    background: url('tour.jpg') no-repeat center;
+    background: url('hospit.jpg') no-repeat center;
 }
 #tele-hos>li{
     background: #000000be;
     box-shadow: 5px 5px 10px rgba(3, 3, 3, 0.452);
-    cursor: pointer;
     transition: transform .1s;
     border-radius: 20px;
 }
@@ -275,7 +279,6 @@ h3{
 #oran-rest>li{
     background: #000000be;
     box-shadow: 5px 5px 10px rgba(3, 3, 3, 0.452);
-    cursor: pointer;
     transition: transform .1s;
     border-radius: 20px;
 }
@@ -297,12 +300,11 @@ h3{
     grid-gap: 50px;
     list-style: none;
     justify-content: center;
-    background: url('restau.jpg') no-repeat center;
+    background: url('hotels.jpg') no-repeat center;
 }
 #oran-hotels>li{
     background: #000000be;
     box-shadow: 5px 5px 10px rgba(3, 3, 3, 0.452);
-    cursor: pointer;
     transition: transform .1s;
     border-radius: 20px;
 }
@@ -324,12 +326,11 @@ h3{
     grid-gap: 50px;
     list-style: none;
     justify-content: center;
-    background: url('restau.jpg') no-repeat center;
+    background: url('tour.jpg') no-repeat center;
 }
 #oran-tourism>li{
     background: #000000be;
     box-shadow: 5px 5px 10px rgba(3, 3, 3, 0.452);
-    cursor: pointer;
     transition: transform .1s;
     border-radius: 20px;
 }
@@ -351,12 +352,11 @@ h3{
     grid-gap: 50px;
     list-style: none;
     justify-content: center;
-    background: url('restau.jpg') no-repeat center;
+    background: url('hospit.jpg') no-repeat center;
 }
 #oran-hos>li{
     background: #000000be;
     box-shadow: 5px 5px 10px rgba(3, 3, 3, 0.452);
-    cursor: pointer;
     transition: transform .1s;
     border-radius: 20px;
 }
@@ -386,7 +386,6 @@ h3{
 #alg-rest>li{
     background: #000000be;
     box-shadow: 5px 5px 10px rgba(3, 3, 3, 0.452);
-    cursor: pointer;
     transition: transform .1s;
     border-radius: 20px;
 }
@@ -408,12 +407,11 @@ h3{
     grid-gap: 50px;
     list-style: none;
     justify-content: center;
-    background: url('restau.jpg') no-repeat center;
+    background: url('hotels.jpg') no-repeat center;
 }
 #alg-hotels>li{
     background: #000000be;
     box-shadow: 5px 5px 10px rgba(3, 3, 3, 0.452);
-    cursor: pointer;
     transition: transform .1s;
     border-radius: 20px;
 }
@@ -435,13 +433,12 @@ h3{
     grid-gap: 50px;
     list-style: none;
     justify-content: center;
-    background: url('restau.jpg') no-repeat center;
+    background: url('tour.jpg') no-repeat center;
 }
 
 #alg-tourism>li{
     background: #000000be;
     box-shadow: 5px 5px 10px rgba(3, 3, 3, 0.452);
-    cursor: pointer;
     transition: transform .1s;
     border-radius: 20px;
 }
@@ -463,12 +460,11 @@ h3{
     grid-gap: 50px;
     list-style: none;
     justify-content: center;
-    background: url('restau.jpg') no-repeat center;
+    background: url('hospit.jpg') no-repeat center;
 }
 #alg-hos>li{
     background: #000000be;
     box-shadow: 5px 5px 10px rgba(3, 3, 3, 0.452);
-    cursor: pointer;
     transition: transform .1s;
     border-radius: 20px;
 }
@@ -497,7 +493,6 @@ h3{
 #con-rest>li{
     background: #000000be;
     box-shadow: 5px 5px 10px rgba(3, 3, 3, 0.452);
-    cursor: pointer;
     transition: transform .1s;
     border-radius: 20px;
 }
@@ -519,12 +514,12 @@ h3{
     grid-gap: 50px;
     list-style: none;
     justify-content: center;
-    background: url('restau.jpg') no-repeat center;
+    background: url('hotels.jpg') no-repeat center;
 }
+
 #con-hotels>li{
     background: #000000be;
     box-shadow: 5px 5px 10px rgba(3, 3, 3, 0.452);
-    cursor: pointer;
     transition: transform .1s;
     border-radius: 20px;
 }
@@ -546,13 +541,12 @@ h3{
     grid-gap: 50px;
     list-style: none;
     justify-content: center;
-    background: url('restau.jpg') no-repeat center;
+    background: url('tour.jpg') no-repeat center;
 }
 
 #con-tourism>li{
     background: #000000be;
     box-shadow: 5px 5px 10px rgba(3, 3, 3, 0.452);
-    cursor: pointer;
     transition: transform .1s;
     border-radius: 20px;
 }
@@ -574,12 +568,12 @@ h3{
     grid-gap: 50px;
     list-style: none;
     justify-content: center;
-    background: url('restau.jpg') no-repeat center;
+    background: url('hospit.jpg') no-repeat center;
 }
+
 #con-hos>li{
     background: #000000be;
     box-shadow: 5px 5px 10px rgba(3, 3, 3, 0.452);
-    cursor: pointer;
     transition: transform .1s;
     border-radius: 20px;
 }
@@ -608,7 +602,6 @@ h3{
 #sah-rest>li{
     background: #000000be;
     box-shadow: 5px 5px 10px rgba(3, 3, 3, 0.452);
-    cursor: pointer;
     transition: transform .1s;
     border-radius: 20px;
 }
@@ -630,12 +623,11 @@ h3{
     grid-gap: 50px;
     list-style: none;
     justify-content: center;
-    background: url('restau.jpg') no-repeat center;
+    background: url('hotels.jpg') no-repeat center;
 }
 #sah-hotels>li{
     background: #000000be;
     box-shadow: 5px 5px 10px rgba(3, 3, 3, 0.452);
-    cursor: pointer;
     transition: transform .1s;
     border-radius: 20px;
 }
@@ -657,13 +649,12 @@ h3{
     grid-gap: 50px;
     list-style: none;
     justify-content: center;
-    background: url('restau.jpg') no-repeat center;
+    background: url('tour.jpg') no-repeat center;
 }
 
 #sah-tourism>li{
     background: #000000be;
     box-shadow: 5px 5px 10px rgba(3, 3, 3, 0.452);
-    cursor: pointer;
     transition: transform .1s;
     border-radius: 20px;
 }
@@ -685,12 +676,12 @@ h3{
     grid-gap: 50px;
     list-style: none;
     justify-content: center;
-    background: url('restau.jpg') no-repeat center;
+    background: url('hospit.jpg') no-repeat center;
 }
+
 #sah-hos>li{
     background: #000000be;
     box-shadow: 5px 5px 10px rgba(3, 3, 3, 0.452);
-    cursor: pointer;
     transition: transform .1s;
     border-radius: 20px;
 }
@@ -704,6 +695,26 @@ h3{
 
 #sah-hos>li:hover{
     transform: scale(1.1);
+}
+
+@media screen and (max-width: 1200px) {
+    #port-title{
+        font-size: 80px;
+    }
+
+    hr{
+        border: none;
+        border-bottom: 2px dashed #B35A20 ;
+        padding-top: 60px;
+        margin-bottom: 100px;
+    }
+
+    .componants{
+        display: block;
+    }
+
+
+
 }
 
 
