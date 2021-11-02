@@ -61,48 +61,58 @@ for (var i = 0; i < li_elements.length; i++) {
     var li_value = this.getAttribute("data-li");
     if (li_value == "tele" && hid_tele.style.display=="none") {
       document.getElementById("Telemcen").style.display = "flex";
+      document.getElementById("Telem").style.transform="scale(1.2)";
     } else{
         document.getElementById("Telemcen").style.display = "none";
         document.getElementById("tele-rest").style.display = "none";
         document.getElementById("tele-hotels").style.display = "none";
         document.getElementById("tele-tourism").style.display = "none";
         document.getElementById("tele-hos").style.display = "none";
+        document.getElementById("Telem").style.transform="none";
     }
     if (li_value == "oran" && hid_oran.style.display=="none") {
       document.getElementById("Oran").style.display = "flex";
+      document.getElementById("Or").style.transform="scale(1.2)";
     } else{
         document.getElementById("Oran").style.display = "none";
         document.getElementById("oran-rest").style.display = "none";
         document.getElementById("oran-hotels").style.display = "none";
         document.getElementById("oran-tourism").style.display = "none";
         document.getElementById("oran-hos").style.display = "none";
+        document.getElementById("Or").style.transform="none";
     }
      if (li_value == "alger" && hid_alger.style.display=="none") {
       document.getElementById("Algiers").style.display = "flex";
+      document.getElementById("Alg").style.transform="scale(1.2)";
     } else{
         document.getElementById("Algiers").style.display = "none";
         document.getElementById("alg-rest").style.display = "none";
         document.getElementById("alg-hotels").style.display = "none";
         document.getElementById("alg-tourism").style.display = "none";
         document.getElementById("alg-hos").style.display = "none";
+        document.getElementById("Alg").style.transform="none";
     }
      if (li_value == "const" && hid_const.style.display=="none" ) {
       document.getElementById("Constantine").style.display = "flex";
+      document.getElementById("Cons").style.transform="scale(1.2)";
     } else{
         document.getElementById("Constantine").style.display = "none";
         document.getElementById("con-rest").style.display = "none";
         document.getElementById("con-hotels").style.display = "none";
         document.getElementById("con-tourism").style.display = "none";
         document.getElementById("con-hos").style.display = "none";
+        document.getElementById("Cons").style.transform="none";
     }
      if(li_value == "tam" && hid_tam.style.display=="none") {
         document.getElementById("Sahara").style.display = "flex";
+        document.getElementById("Sah").style.transform="scale(1.2)";
     }else{
         document.getElementById("Sahara").style.display = "none";
         document.getElementById("sah-rest").style.display = "none";
         document.getElementById("sah-hotels").style.display = "none";
         document.getElementById("sah-tourism").style.display = "none";
         document.getElementById("sah-hos").style.display = "none";
+        document.getElementById("Sah").style.transform="none";
     }
   });
 }
