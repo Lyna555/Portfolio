@@ -4,6 +4,20 @@
     box-sizing: border-box;
 }
 
+body::-webkit-scrollbar{
+   width: 9px;
+}
+
+body::-webkit-scrollbar-tarack{
+   background: white;
+}
+body::-webkit-scrollbar-thumb{
+   background: linear-gradient(#e09b6d,#f0c18b);
+   border: solid;
+   border-width: 1px;
+   border-color: rgba(104, 103, 103, 0.521);
+}
+
 #portfolio{
     background-color: #f5f5dc;
     color: white;
@@ -14,17 +28,18 @@
 }
 
 #port-title{
-    font-size: 119px;
+    font-size: 6em;
     margin-left: 25px;
     float: left;
     color: #E8891D;
+    cursor: default;
 }
 
 #O{
     color: #B35A20;
 }
 
-hr{
+#port-hr{
     border: none;
     border-bottom: 5px dashed #B35A20 ;
     padding-top: 60px;
@@ -34,7 +49,7 @@ hr{
 #wilayas{
     list-style: none;
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
@@ -66,7 +81,7 @@ hr{
 }
 
 #part_two{
-    background-color: #fcf1b1;
+    background: #fcf1b1;
     font-family: sans-serif;
     font-size: 15px;
     scroll-behavior: smooth;
@@ -88,7 +103,7 @@ hr{
 }
 
 .componants li:hover{
-    background-color: #e2d89e;
+    background: #e2d89e;
     cursor: pointer;
 }
 
@@ -115,6 +130,7 @@ hr{
     list-style: none;
     justify-content: center;
     background: url('restau.jpg') no-repeat center;
+    width: 100%;
 }
 
 #tele-rest>li{
@@ -697,24 +713,234 @@ hr{
     transform: scale(1.1);
 }
 
-@media screen and (max-width: 1200px) {
-    #port-title{
-        font-size: 80px;
+@media screen and (max-width: 1200px) and (min-width: 800px){
+
+    #port-hr{
+        padding-top: 50px;
     }
 
-    hr{
-        border: none;
-        border-bottom: 2px dashed #B35A20 ;
-        padding-top: 60px;
-        margin-bottom: 100px;
+    .componants{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    #tele-rest{
+        grid-template-columns: auto auto;
+        background: url(restau.jpg) 200vh;
+    }
+
+    #tele-hotels{
+        grid-template-columns: auto auto;
+        background: url(hotels.jpg) 200vh;
+    }
+
+    #tele-tourism{
+        grid-template-columns: auto auto;
+        background: url(tour.jpg) 200vh;
+    }
+
+    #tele-hos{
+        grid-template-columns: auto auto;
+        background: url(hospit.jpg) 200vh;
+    }
+
+    #oran-rest{
+        grid-template-columns: auto auto;
+        background: url(restau.jpg) 200vh;
+    }
+
+    #oran-hotels{
+        grid-template-columns: auto auto;
+        background: url(hotels.jpg) 200vh;
+    }
+
+    #oran-tourism{
+        grid-template-columns: auto auto;
+        background: url(tour.jpg) 200vh;
+    }
+
+    #oran-hos{
+        grid-template-columns: auto auto;
+        background: url(hospit.jpg) 200vh;
+    }
+
+    #alg-rest{
+        grid-template-columns: auto auto;
+        background: url(restau.jpg) 200vh;
+    }
+
+    #alg-hotels{
+        grid-template-columns: auto auto;
+        background: url(hotels.jpg) 200vh;
+    }
+
+    #alg-tourism{
+        grid-template-columns: auto auto;
+        background: url(tour.jpg) 200vh;
+    }
+
+    #alg-hos{
+        grid-template-columns: auto auto;
+        background: url(hospit.jpg) 200vh;
+    }
+
+    #con-rest{
+        grid-template-columns: auto auto;
+        background: url(restau.jpg) 200vh;
+    }
+
+    #con-hotels{
+        grid-template-columns: auto auto;
+        background: url(hotels.jpg) 200vh;
+    }
+
+    #con-tourism{
+        grid-template-columns: auto auto;
+        background: url(tour.jpg) 200vh;
+    }
+
+    #con-hos{
+        grid-template-columns: auto auto;
+        background: url(hospit.jpg) 200vh;
+    }
+
+    #sah-rest{
+        grid-template-columns: auto auto;
+        background: url(restau.jpg) 200vh;
+    }
+
+    #sah-hotels{
+        grid-template-columns: auto auto;
+        background: url(hotels.jpg) 200vh;
+    }
+
+    #sah-tourism{
+        grid-template-columns: auto auto;
+        background: url(tour.jpg) 200vh;
+    }
+
+    #sah-hos{
+        grid-template-columns: auto auto;
+        background: url(hospit.jpg) 200vh;
+    }
+}
+
+@media screen and (max-width: 800px){
+    #port-title{
+        font-size: 4em;
+    }   
+
+    #port-hr{
+        padding-top: 35px;
     }
 
     .componants{
         display: block;
     }
 
+    #wilayas{
+        display: block;
+    }
 
+    #tele-rest{
+        grid-template-columns: auto;
+        background: url(restau.jpg) 200vh;
+    }
 
+    #tele-hotels{
+        grid-template-columns: auto;
+        background: url(hotels.jpg) 200vh;
+    }
+
+    #tele-tourism{
+        grid-template-columns: auto;
+        background: url(tour.jpg) 200vh;
+    }
+
+    #tele-hos{
+        grid-template-columns: auto;
+        background: url(hospit.jpg) 200vh;
+    }
+
+    #oran-rest{
+        grid-template-columns: auto;
+        background: url(restau.jpg) 200vh;
+    }
+
+    #oran-hotels{
+        grid-template-columns: auto;
+        background: url(hotels.jpg) 200vh;
+    }
+
+    #oran-tourism{
+        grid-template-columns: auto;
+        background: url(tour.jpg) 200vh;
+    }
+
+    #oran-hos{
+        grid-template-columns: auto;
+        background: url(hospit.jpg) 200vh;
+    }
+
+    #alg-rest{
+        grid-template-columns: auto;
+        background: url(restau.jpg) 200vh;
+    }
+
+    #alg-hotels{
+        grid-template-columns: auto;
+        background: url(hotels.jpg) 200vh;
+    }
+
+    #alg-tourism{
+        grid-template-columns: auto;
+        background: url(tour.jpg) 200vh;
+    }
+
+    #alg-hos{
+        grid-template-columns: auto;
+        background: url(hospit.jpg) 200vh;
+    }
+
+    #con-rest{
+        grid-template-columns: auto;
+        background: url(restau.jpg) 200vh;
+    }
+
+    #con-hotels{
+        grid-template-columns: auto;
+        background: url(hotels.jpg) 200vh;
+    }
+
+    #con-tourism{
+        grid-template-columns: auto;
+        background: url(tour.jpg) 200vh;
+    }
+
+    #con-hos{
+        grid-template-columns: auto;
+        background: url(hospit.jpg) 200vh;
+    }
+
+    #sah-rest{
+        grid-template-columns: auto;
+        background: url(restau.jpg) 200vh;
+    }
+
+    #sah-hotels{
+        grid-template-columns: auto;
+        background: url(hotels.jpg) 200vh;
+    }
+
+    #sah-tourism{
+        grid-template-columns: auto;
+        background: url(tour.jpg) 200vh;
+    }
+
+    #sah-hos{
+        grid-template-columns: auto;
+        background: url(hospit.jpg) 200vh;
+    }
 }
 
 
